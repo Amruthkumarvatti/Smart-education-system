@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+        /* Import Google font - Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  background: #f07334;
+  overflow: hidden;
+}
+
+.container {
+  width: 400px;
+  background: #fff;
+  padding: 30px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+}
+
+.form {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.form_content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.input_box {
+  position: relative;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+input {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 15px;
+  color: #333;
+  border: none;
+  border-bottom: 1px solid #333;
+  outline: none;
+  background: transparent;
+}
+
+i {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #333;
+  transition: 0.5s;
+}
+
+.email {
+  left: 20px;
+}
+
+.password {
+  left: 20px;
+}
+
+.pw_hide {
+  right: 20px;
+  bottom: 35px;
+  color: #333;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.button {
+  width: 100%;
+  background: #f07334;
+  color: #fff;
+  padding: 10px 0;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.5s;
+  margin-bottom: 10px;
+}
+
+.button:hover {
+  background: #fff;
+  color: #f07334;
+}
+
+.login_signup {
+  width: 100%;
+  display: flex;
+  justify-
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h2>Login</h2>
+      <form class="form" id="login-form">
+        <div class="form_content">
+          <div class="input_box">
+            <input type="text" placeholder="Enter your email" required />
+            <i class="uil uil-envelope-alt email"></i>
+          </div>
+          <div class="input_box">
+            <input type="password" placeholder="Create password" required />
+            <i class="uil uil-lock password"></i>
+            <i class="uil uil-eye-slash pw_hide"></i>
+          </div>
+          <button class="button" type="submit"><a href="signedup.html">Signup Now</a></button>
+          
+         
+        </div>
+      </form>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
